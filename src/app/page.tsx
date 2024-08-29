@@ -1,5 +1,5 @@
-import About from "@/sections/home/about";
-import Intro from "@/sections/home/intro";
+import About from "@/components/home/about";
+import Intro from "@/components/home/intro";
 
 export default function Home() {
   return (
