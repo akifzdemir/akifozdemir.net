@@ -14,7 +14,7 @@ export default function About() {
     <div
       ref={container}
       className="bg-zinc-200 font-light  
-      gap-6 flex flex-col mb-96  text-zinc-950  min-h-screen p-9"
+      gap-6 flex flex-col mb-96 text-zinc-950  min-h-screen p-9"
     >
       <h1
         className="col-span-5 h-[70vh] flex items-center 
@@ -38,19 +38,13 @@ export default function About() {
         </div>
         <div className="col-span-1 self-center">
           <button
-            className=" text-zinc-950 underline
+            className="text-zinc-950 underline
             text-start text-3xl"
           >
             More About Me
           </button>
         </div>
       </div>
-      <motion.div style={{ height }} className="relative  mt-[100px]">
-        <div
-          className="h-[1550%] w-[120%]
-           -left-[10%] rounded-b-[50%] bg-zinc-200 -z-50 absolute shadow-custom"
-        ></div>
-      </motion.div>
     </div>
   );
 }
