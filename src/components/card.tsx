@@ -12,7 +12,7 @@ export default function Card({
   return (
     <div
       className={cn(
-        "relative flex px-6 size-full overflow-hidden rounded-xl shadow-md py-6 items-center justify-center bg-zinc-200 border text-zinc-950",
+        "relative flex px-6 size-full  rounded-2xl shadow-xl py-6 items-center justify-center bg-zinc-200 border text-zinc-950",
         className
       )}
     >

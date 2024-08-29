@@ -1,3 +1,5 @@
+import Noise from "@/components/noise";
+
 export default function Intro() {
   return (
     <div className="flex h-screen bg-zinc-200 flex-col  items-center p-9">
@@ -13,6 +15,7 @@ export default function Intro() {
         <p className="text-3xl self-end">
           - A Full Stack Developer and Computer Engineer.
         </p>
+        <Noise />
       </div>
     </div>
   );
