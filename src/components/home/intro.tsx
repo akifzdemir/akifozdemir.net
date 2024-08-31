@@ -1,21 +1,22 @@
 import Noise from "@/components/noise";
+import { VelocityScroll } from "../velocity-scroll";
 
 export default function Intro() {
   return (
-    <div className="flex h-screen bg-zinc-200 flex-col  items-center p-9">
+    <div className="flex h-screen  justify-center flex-col  items-center ">
       <div
-        className="bg-zinc-950 font-black
-        h-full w-full flex flex-col gap-12 px-12 items-center shadow-md justify-center
-   rounded-3xl text-zinc-200 noise"
+        className="font-black
+         flex flex-col gap-12 w-full items-center justify-between relative"
       >
-        <div className="flex flex-col self-start text-9xl gap-0 font-bold ">
-          <span className="">Hey</span>
-          <span className="">I&apos;m Akif</span>
+        <div className="flex flex-col px-9 self-start text-9xl gap-0">
+          <span>Hey</span>
+          <span>I&apos;m Akif</span>
         </div>
-        <p className="text-3xl self-end">
-          - A Full Stack Developer and Computer Engineer.
-        </p>
-        <Noise />
+        <VelocityScroll
+          text="Full Stack Developer & Computer Engineer &"
+          default_velocity={3}
+          className="text-center text-4xl  tracking-[-0.02em] py-1  drop-shadow-md  md:text-7xl md:leading-[5rem]"
+        />
       </div>
     </div>
   );

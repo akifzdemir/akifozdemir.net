@@ -17,6 +17,10 @@ const config: Config = {
       boxShadow: {
         custom: "0px 60px 50px rgba(0, 0, 0, 0.748)",
       },
+      colors: {
+        text: "#222222",
+        bg: "#F9F8F6",
+      },
     },
   },
   plugins: [],
