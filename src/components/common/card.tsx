@@ -10,8 +10,10 @@ const CardBody = ({
   description: string;
 }) => (
   <div className={cn("text-left", className)}>
-    <h3 className="text-6xl font-black mb-1 text-text">{title}</h3>
-    <p className="text-text/80 text-2xl">{description}</p>
+    <h3 className="text-4xl lg:text-6xl font-black mb-2 text-current">
+      {title}
+    </h3>
+    <p className="text-current/80 text-xl lg:text-2xl">{description}</p>
   </div>
 );
 export const Card = ({

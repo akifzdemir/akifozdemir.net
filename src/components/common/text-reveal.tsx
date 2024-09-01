@@ -18,7 +18,7 @@ export const TextRevealByWord: FC<TextRevealByWordProps> = ({
 
   const { scrollYProgress } = useScroll({
     target: targetRef,
-    offset: ["start end", "end center"],
+    offset: ["center end", "end center"],
   });
 
   const words = text.split(" ");
@@ -28,7 +28,7 @@ export const TextRevealByWord: FC<TextRevealByWordProps> = ({
       <div className={"flex max-w-4xl items-center bg-transparent"}>
         <p
           className={
-            "flex flex-wrap text-2xl font-bold text-text/20  md:text-3xl lg:text-9xl xl:text-9xl"
+            "flex flex-wrap font-black text-current/20 text-6xl  lg:text-9xl"
           }
         >
           {words.map((word, i) => {
@@ -64,7 +64,7 @@ const Word: FC<WordProps> = ({ children, progress, range }) => {
         onViewportLeave={() => setShow(false)}
         style={{ opacity: show ? opacity : 1 }}
         transition={{ duration: 0.5 }}
-        className={"text-text "}
+        className={"text-current"}
       >
         {children}
       </motion.span>

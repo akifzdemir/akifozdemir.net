@@ -8,7 +8,7 @@ export default function Intro() {
         className="font-black
          flex flex-col gap-6 w-full items-center justify-between relative"
       >
-        <div className="flex flex-col px-9 text-center text-9xl gap-6">
+        <div className="flex flex-col px-9 text-center text-7xl sm:text-8xl xl:text-9xl md:gap-6">
           <BlurFade>
             <span>Mehmet Akif</span>
           </BlurFade>

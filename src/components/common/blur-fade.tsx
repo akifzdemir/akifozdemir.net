@@ -34,7 +34,7 @@ export default function BlurFade({
   delay = 0,
   yOffset = 80,
   inView = false,
-  inViewMargin = "-50px",
+  inViewMargin = "-200px",
   blur = "10px",
 }: BlurFadeProps) {
   const ref = useRef(null);
