@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
-import LenisProvider from "@/components/lenis-provider";
+import LenisProvider from "@/components/common/lenis-provider";
 import { GeistSans } from "geist/font/sans";
 import { GeistMono } from "geist/font/mono";
 

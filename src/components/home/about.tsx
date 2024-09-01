@@ -1,39 +1,33 @@
 "use client";
 
+import BlurFade from "../common/blur-fade";
+import TextRevealByWord from "../common/text-reveal";
+
 export default function About() {
   return (
-    <div
-      className="font-light  
-      gap-6 flex flex-col  min-h-screen p-9"
-    >
-      <h1
-        className="col-span-5 flex items-center 
-      justify-center text-9xl font-black "
-      >
-        Here&apos;s a little about me...
-      </h1>
-
-      <div className="grid grid-cols-5 text-5xl gap-6 font-bold leading-tight">
-        <p className="col-span-3 border  p-4 shadow-md rounded-2xl">
-          I&apos;m a software developer who just graduated from computer
-          engineering.
-        </p>
-        <p className="col-span-2 border   p-4 shadow-md rounded-2xl">
-          I&apos;m passionate about creating products that are fast, accessible,
-          and delightful to use.
-        </p>
-        <div className="col-span-4 border  p-4 shadow-md rounded-2xl">
-          I&apos;m currently working on my personal projects and looking for new
-          opportunities.
-        </div>
-        <div className="col-span-1 self-center">
-          <button
-            className=" underline
-            text-start text-3xl"
-          >
-            More About Me
+    <div className="gap-6 flex flex-col px-9 h-screen">
+      <div className="">
+        <TextRevealByWord
+          text="Here's a little about me..."
+          className="text-9xl font-black h-[40vh]"
+        />
+      </div>
+      <div className="font-semibold xl:text-5xl 2xl:text-5xl gap-12 pb-4 flex flex-col  items-center justify-center">
+        <BlurFade
+          className="w-3/4 text-center leading-tight"
+          inView
+          inViewMargin="-200px"
+        >
+          <p>
+            I am a new graduate in Computer Engineering from Konya Technical
+            University with one year experience in web development. I am
+            currently focusing my personal projects and looking for new
+            opportunities.
+          </p>
+          <button className="shadow-lg p-2 mt-5 rounded-md bg-text text-bg">
+            read more about me{" "}
           </button>
-        </div>
+        </BlurFade>
       </div>
     </div>
   );
