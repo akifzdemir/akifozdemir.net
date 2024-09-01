@@ -3,7 +3,10 @@ import BlurFade from "../common/blur-fade";
 
 export default function Intro() {
   return (
-    <div className="flex h-screen  justify-center  flex-col items-center ">
+    <div
+      id="home"
+      className="flex h-screen  justify-center  flex-col items-center "
+    >
       <div
         className="font-black
          flex flex-col gap-6 w-full items-center justify-between relative"

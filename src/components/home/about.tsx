@@ -3,7 +3,7 @@ import TextRevealByWord from "../common/text-reveal";
 
 export default function About() {
   return (
-    <div className="gap-16 pb-24 flex flex-col px-9 ">
+    <div id="about" className="gap-16 pb-24 flex flex-col px-9 ">
       <div>
         <TextRevealByWord
           text="Here's a little about me..."

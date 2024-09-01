@@ -4,7 +4,7 @@ import TextRevealByWord from "../common/text-reveal";
 
 export default function Techs() {
   return (
-    <div className="gap-16 flex flex-col px-9 min-h-[90vh]">
+    <div id="techs" className="gap-16 flex flex-col px-9 min-h-[90vh]">
       <div>
         <TextRevealByWord
           text="Here's what I do..."

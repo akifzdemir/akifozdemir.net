@@ -3,6 +3,7 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import LenisProvider from "@/components/common/lenis-provider";
 import Footer from "@/components/common/footer";
+import Header from "@/components/common/header";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -22,8 +23,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${poppins.className} antialiased bg-bg text-text`}>
+      <body
+        className={`${poppins.className} custom-cursor antialiased bg-bg text-text`}
+      >
         <LenisProvider>
+          <Header />
           {children}
           <Footer />
         </LenisProvider>
