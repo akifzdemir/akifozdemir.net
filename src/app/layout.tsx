@@ -22,7 +22,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const theme = cookies().get("theme") || { value: "dark" };
+  const theme = cookies().get("theme") || { value: "light " };
   return (
     <html lang="en" className={`${theme.value}`}>
       <body
