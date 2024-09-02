@@ -20,7 +20,7 @@ export default function Footer() {
             Github
           </a>
           <a
-            href="mailto:akifozdemir@icloud.com"
+            href="mailto:akifzdemir@icloud.com"
             target="_blank"
             className="text-gray-500 hover:text-gray-700"
           >
