@@ -1,11 +1,15 @@
 "use client";
 import { useLenis } from "lenis/react";
 import BlurFade from "./blur-fade";
+import { ThemeSwitcher } from "./theme-switch";
 
-export default function Header() {
+export default function Header({ theme }: Readonly<{ theme: string }>) {
   const lenis = useLenis();
   return (
-    <header className="fixed top-0 left-0 font-black text-2xl z-50 px-12 justify-center  w-full h-14 flex flex-row items-center ">
+    <header
+      className="fixed top-0 left-0 font-black text-2xl z-40 px-12
+     justify-center  w-full h-14 flex flex-row items-center "
+    >
       <BlurFade yOffset={-100} delay={0.8}>
         <div className="flex flex-row gap-6 items-center">
           <button
@@ -26,6 +30,7 @@ export default function Header() {
           >
             Work
           </button>
+          <ThemeSwitcher theme={theme} />
         </div>
       </BlurFade>
     </header>

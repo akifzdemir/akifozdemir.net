@@ -4,6 +4,7 @@ import "./globals.css";
 import LenisProvider from "@/components/common/lenis-provider";
 import Footer from "@/components/common/footer";
 import Header from "@/components/common/header";
+import { cookies } from "next/headers";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -21,13 +22,15 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const theme = cookies().get("theme") || { value: "dark" };
   return (
-    <html lang="en">
+    <html lang="en" className={`${theme.value}`}>
       <body
-        className={`${poppins.className} custom-cursor antialiased bg-bg text-text`}
+        className={`${poppins.className} transition-colors
+         custom-cursor antialiased dark:bg-text dark:text-bg bg-bg text-text`}
       >
         <LenisProvider>
-          <Header />
+          <Header theme={theme.value} />
           {children}
           <Footer />
         </LenisProvider>
